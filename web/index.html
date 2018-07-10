@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./../build/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row screen" id="screen-1">
+        <div class="col-8 left-content">
+            <div class="bottom-menu">
+                <span>НАЗВАНИЕ1</span>
+                <span>НАЗВАНИЕ2</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ5</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ6</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ7</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ8</span>
+            </div>
+        </div>
+
+        <div class="col-4 right-content">
+            <img src="./../src/img/heart-pink.png" alt="heart" class="heart-img">
+            <div class="right-content-description">
+                <h3>Lorem ipsum</h3>
+                <p class="right-content-inner">Mauris vel nisi ac orci placerat semper. Aenean sapien massa.</p>
+                <h2>Lorem ipsum?</h2>
+                <button type="button" class="confirm-btn" id="start-btn">НАЧАТЬ</button>
+            </div>
+        </div>
+    </div>
+    <div class="row screen vote-screen" id="screen-2">
+        <div class="col-6 left-content">
+            <div class="vote-results">
+                <p class="vote-percent"></p>
+                <p class="vote-text">пользователей - <span></span></p>
+            </div>
+            <div class="bottom-menu">
+                <span>НАЗВАНИЕ1</span>
+                <span>НАЗВАНИЕ2</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ5</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ6</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ7</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ8</span>
+            </div>
+        </div>
+
+        <div class="col-6 right-content">
+            <img src="./../src/img/icon-yellow.png" alt="heart" class="heart-img">
+            <div class="right-content-description">
+                <h3>УКАЖИТЕ СВОЙ ПОЛ</h3>
+                <form name="user-form" action="" method="post" id="vote-form">
+                    <div class="radio-item">
+                        <input type="radio" id="variant1" name="variant">
+                        <label class="form-label option-label" for="variant1">Вариант А</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="variant2" name="variant">
+                        <label class="form-label option-label" for="variant2">Вариант Б</label>
+                    </div>
+
+                    <button type="button" class="confirm-btn" id="continue-btn">ПРОДОЛЖИТЬ</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row screen form-screen" id="screen-3">
+        <div class="col-6 left-content">
+            <div class="bottom-menu">
+                <span>НАЗВАНИЕ1</span>
+                <span>НАЗВАНИЕ2</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>НАЗВАНИЕ3</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ5</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ6</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ7</span>
+                <span>ОЧЕНЬ ДЛИННОЕ НАЗВАНИЕ8</span>
+            </div>
+        </div>
+
+        <div class="col-6 right-content">
+            <img src="./../src/img/icon-blue.png" alt="heart" class="heart-img">
+            <div class="right-content-description">
+                <h3>Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod</h3>
+                <form name="user-form" action="" method="post" id="user-form">
+                    <label class="small-label">Я ищу:</label>
+                    <div class="form-check-inline radio-item">
+                        <input type="radio" id="searchVariant1" name="searchVariant">
+                        <label class="form-label" for="searchVariant1">Вариант 1</label>
+
+                    </div>
+                    <div class="form-check-inline radio-item">
+                        <input type="radio" id="searchVariant2" name="searchVariant">
+                        <label class="form-label" for="searchVariant2">Вариант 2</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="small-label" for="userName">Ваше имя:</label>
+                        <input type="text" class="form-control" id="userName">
+                    </div>
+
+                    <div class="form-group email-group">
+                        <label class="small-label" for="userEmail">Email:</label>
+                        <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label class="small-label" for="userPsw">Придумайте пароль:</label>
+                        <input type="password" class="form-control" id="userPsw">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" checked class="form-check-input" id="userConfirm" required>
+                        <label class="form-check-label" for="userConfirm">Регистрируясь, вы подтверждаете, что вам уже
+                            исполнилось
+                            18 лет и вы ознакомились с условиями пользования сайтом.</label>
+                    </div>
+                    <button type="submit" class="confirm-btn" id="confirm">ПРОДОЛЖИТЬ</button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="./../build/assets.js"></script>
+</body>
+</html>
